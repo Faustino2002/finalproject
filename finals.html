@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="finals.css">
+  <title>Shopiepay 11;11</title>
+  <script src="finals.js"></script>
+</head>
+
+<body>
+  <header>
+
+  </header>
+  <main>
+<div class="product RED HOODIE">
+      <img src="redhoodie.jpg" width="226" height="370" alt="RED HOODIE">
+      <h3>RED HOODIE</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+<div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+<div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+<div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+ <div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+ <div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+       <div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+    <div class="product BLACK HOODIE">
+      <img src="hoodieblack.jpg" width="226" height="370" alt="BLACK">
+      <h3>BLACK</h3>
+      <p>COLOR BLACK HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('BLACK', 350)">Add to Cart</button>
+	  
+    </div>
+    <div class="product CREAM HOODIE">
+      <img src="hoodiecream.jpg" width="226" height="370" alt="CREAM">
+      <h3>CREAM</h3>
+      <p>CREAM HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('CREAM', 350)">Add to Cart</button>
+    </div>
+    <div class="product Gray Hoodie">
+      <img src="grayhoodie.jpg" width="226" height="370" alt="GRAY">
+      <h3>GRAY</h3>
+      <p>GRAY HOODIE</p>
+      <p>Price: 350 PESOS</p>
+      <button class="btn" onclick="addToCart('GRAY HOODIE', 350)">Add to Cart</button>
+    </div>
+    <div id="cart"></div>
+    <button class="btn1" onclick="displayCart()"><img src="cart.png" width="50" height="50"/></button>
+  </main>
+  <button class="btn3" onclick="checkout()">CHECKOUT</button>
+  <script>
+    var cartItems = [];
+    var totalPrice = 0;
+
+    function addToCart(product, price) {
+      cartItems.push(product);
+      totalPrice += price;
+      alert(product + " is added to cart!");
+    }
+
+    function displayCart() {
+      var cartElement = document.getElementById("cart");
+      cartElement.innerHTML = "";
+      for (var i = 0; i < cartItems.length; i++) {
+        var item = cartItems[i];
+        var itemElement = document.createElement("p");
+        itemElement.textContent = item;
+        cartElement.appendChild(itemElement);
+      }
+    }
+
+    function checkout() {
+      alert("Thanks for purchasing! Total Price: " + "₱" + totalPrice );
+    }
+
+
+    function displayCart() {
+      alert("Products in cart: " + cartItems.join(", "));
+    }
+
+  </script>
+ 
+  
+
+  <footer>
+    <p> <b> <font face = "tahoma">  <center> 
+    
+        <hr>
+        <table>
+  
+          <th>
+            <li>ABOUT</li>
+            <li>Leather Texture: Smooth</li>
+            <li>Material: Cottohn Twill</li>
+          </th>
+  
+          <th>
+            <li>SERVICES</li>
+            <li>Email: randolphcaber00@gmail.com</li>
+            
+          </th>
+  
+        </table>
+  
+      
+  
+      
+  
+      <h2>
+        <font face="Tahoma"> Follow Us!</font>
+      </h2>
+ 
+        <a href="https://www.facebook.com/arvinpaul.hilario" target="blank">
+          <img src="fb.png" width=" 50" height="50"></a>
+  
+  
+  
+        
+  
+        <p class="copyright">John Randolph C. Faustino</p></center> </font></b></p>
+  </footer>
+  </body>
+  </html>
